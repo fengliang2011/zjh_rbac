@@ -1,0 +1,30 @@
+{
+    "name": "zjh/rbac",
+    "description": "Access control for laravel route based on laravel policy and santigarcor laratrust",
+    "type": "library",
+    "require": {
+        "php": "^7.1",
+        "santigarcor/laratrust": "5.1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Feng Liang",
+            "email": "344531331@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Zjh\\Rbac": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "provider": [
+                "Zjh\\Rbac\\ZjhRbacProvider"
+            ]
+        }
+    }
+}
