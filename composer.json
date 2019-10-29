@@ -1,5 +1,5 @@
 {
-    "name": "zjh/rbac",
+    "name": "zijinhua/rbac",
     "description": "Access control for laravel route based on laravel policy and santigarcor laratrust",
     "type": "library",
     "require": {
