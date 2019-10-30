@@ -17,7 +17,7 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Zjh\\Rbac": "src/"
+            "Zjh\\Rbac\\": "src/"
         }
     },
     "extra": {
