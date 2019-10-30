@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "php": "^7.1",
-        "santigarcor/laratrust": "5.1.0"
+        "santigarcor/laratrust": "5.1.*"
     },
     "license": "MIT",
     "authors": [

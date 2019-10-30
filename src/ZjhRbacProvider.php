@@ -8,10 +8,23 @@
 
 namespace Zjh\Rbac;
 
+use Laratrust\LaratrustServiceProvider;
 
-use Illuminate\Support\ServiceProvider;
-
-class ZjhRbacProvider extends ServiceProvider
+class ZjhRbacProvider extends LaratrustServiceProvider
 {
+    public function boot()
+    {
+        parent::boot();
+        $this->publishes([
+            __DIR__.'/../config/laratrust.php' => config_path('laratrust.php'),
+            __DIR__. '/../config/laratrust_seeder.php' => config_path('laratrust_seeder.php'),
+        ], 'zijihua_rbac');
 
+
+    }
+
+    public function publishMigration()
+    {
+        
+    }
 }
